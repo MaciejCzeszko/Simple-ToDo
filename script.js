@@ -1,7 +1,6 @@
 const inputBox = document.querySelector('#input');
 const submitItem = document.querySelector('#submit');
 const listItems = document.querySelector('#items');
-const inputValue = inputBox.value;
 
 function addItem(text) {
     const newItem = document.createElement('p');
@@ -11,7 +10,6 @@ function addItem(text) {
 }
 
 submitItem.addEventListener('click', (e) => {
-    e.preventDefault;
     addItem(inputBox.value);
     inputBox.value = "";
 })
